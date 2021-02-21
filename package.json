@@ -1,0 +1,25 @@
+{
+  "name": "jinnycho-blog-custom",
+  "version": "1.0.0",
+  "description": "My custom blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinnycho/jinnycho-blog-custom.git"
+  },
+  "keywords": [],
+  "author": "Jinny Cho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinnycho/jinnycho-blog-custom/issues"
+  },
+  "homepage": "https://github.com/jinnycho/jinnycho-blog-custom#readme",
+  "dependencies": {
+    "front-matter": "^4.0.2",
+    "highlight.js": "^10.6.0",
+    "marked": "^2.0.0"
+  }
+}

@@ -1,8 +1,7 @@
 const config = {
   dev: {
     postDir: "./content",
-    outDir: "./public",
-    staticDir: "./static"
+    outDir: "./public"
   }
 };
 

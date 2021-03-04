@@ -1,5 +1,8 @@
 const marked = require("marked");
 
+/**
+ * This is to highlight code
+ **/
 marked.setOptions({
   renderer: new marked.Renderer(),
   highlight: function(code, language) {

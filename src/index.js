@@ -1,24 +1,14 @@
 const fs = require("fs");
 const fm = require("front-matter");
 const config = require("./config");
-const createPost = require("./posts.js");
+const postsLib = require("./posts.js");
 
+// This will return an array of posts with corresponding data
 const posts = fs
   .readdirSync(config.dev.postsdir)
   .map(post => post.slice(0, -3))
-  .map(post => createPost(post));
+  .map(post => postsLib.createPost(post));
 
-console.log(posts);
+if (!fs.existsSync(config.dev.outdir)) fs.mkdirSync(config.dev.outdir);
 
-const createPosts = (posts) => {
-  posts.forEach(post => {
-    if (!fs.existsSync(`${config.dev.outdir}/${post.path}`)) {
-      fs.mkdirSync(`${config.dev.outdir}/${post.path}`);
-    }
-
-    fs.writeFile(
-      `${config.dev.outdir}/${post.path}/index.html`,
-      posthtml
-    );
-  });
-};
+postsLib.createPosts(posts);

@@ -19,7 +19,7 @@ const createPost = (postPath) => {
  * A helper function that will take the JSON object and return a complete
  * HTML page that can be simply written to a file
  **/
-const posthtml = (date) => `
+const posthtml = (data) => `
 <!DOCTYPE html>
 <html lang="en">
     <head>

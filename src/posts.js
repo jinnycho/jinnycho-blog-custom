@@ -43,7 +43,7 @@ const posthtml = (data) => `
 `;
 
 /**
- * Take the output of the createPost() and generate  an HTML file
+ * Take the output of the createPost() and generate an HTML file
  **/
 const createPosts = (posts) => {
   posts.forEach(post => {

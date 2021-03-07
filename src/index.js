@@ -1,5 +1,4 @@
 const fs = require("fs");
-const fm = require("front-matter");
 const config = require("./config");
 const postsLib = require("./posts");
 const addHomePage = require("./homepage");

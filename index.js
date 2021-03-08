@@ -20,14 +20,12 @@ const path = require('path');
 app.set('views', path.join(__dirname, 'blog'));
 app.set('view engine', 'ejs');
 
-app.get("/", function(request, response) {
+app.get('/', function(request, response) {
   response.sendFile(__dirname + "/views/index.html");
 });
 
 app.get('/blog/:article', (req, res) => {
-  const file = matter.read(__dirname + '/blog/' + req.params.article + '.md');
-
-  console.log(file);
+  const file = matter.read(__dirname + '/blog/contents/' + req.params.article + '.md');
 
   // convert markdown content to HTML
   let md = require('markdown-it')();

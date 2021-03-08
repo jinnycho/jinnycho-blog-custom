@@ -1,9 +1,9 @@
 ---
-title: "Hello 1"
+title: "Hello 2"
 description: "A nice description of this post"
 image: A nice image representing the blog post, mainly meant for the <meta> tags
 ---
 
-## Hello 1
+## Hello 2
 
-This is Hello 1.md. `hello1`
+Hello 2

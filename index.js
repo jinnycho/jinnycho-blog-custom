@@ -41,7 +41,7 @@ app.get('/blog/:article', (req, res) => {
 });
 
 app.get('/blog', (req, res) => {
-  const posts = fs.readdirSync(__dirname + '/blog').filter(file => file.endsWith('.md'));
+  const posts = fs.readdirSync(__dirname + '/blog/contents').filter(file => file.endsWith('.md'));
   res.render('blog', {
     posts: posts
   });

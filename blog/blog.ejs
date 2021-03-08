@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Jinny Ch</title>
+    <meta name="title" content="Blog - Jinny Ch">
+    <meta name="description" content="The offial blog">
+    <meta name="keywords" content="jinnych, jinnycho">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/blog.css" />
+  </head>
+
+  <body>
+    <div id="nav">
+      <a href="/" class="nav-a">
+        <button class="nav-button">
+          HOME
+        </button>
+      </a>
+      <a href="/blog" class="nav-a">
+        <button class="nav-button">
+          BLOG
+        </button>
+      </a>
+    </div>
+
+    <div id="blog">
+      <% for (post of posts) { %>
+        <a href="/blog/<%= post.slice(0, -3) %>">
+          <div class="post">
+            <%= post.toUpperCase() %>
+          </div>
+        </a>
+      <% } %>
+    </div>
+  </body>
+</html>

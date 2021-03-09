@@ -39,9 +39,8 @@ a {
 }
 
 .nav-button:hover {
-  background-color: #0d0945;
+  color: #0d0945;
   font-family: 'Source Code Pro', monospace;
-  color: white;
   transition: 1s ease;
   font-weight: bold;
 }
